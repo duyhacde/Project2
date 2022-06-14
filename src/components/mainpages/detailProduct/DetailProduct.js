@@ -162,8 +162,12 @@ function DetailProduct() {
                     </select>
                   </div>
                   <p>{detailProduct.description}</p>
-                  {/* <p>{detailProduct.content}</p> */}
-                  <Link to="/cart" className="cart">Buy Now</Link>
+                  <p>{detailProduct.content}</p>
+                  <p>Sold: {detailProduct.sold}</p>
+                  <Link to="/cart" className="cart"
+                    onClick={() => addCart(detailProduct)}>
+                        Buy Now
+                    </Link>
               </div>
           </div>
           <div className='related'>
@@ -174,7 +178,7 @@ function DetailProduct() {
               <div className="products">
                   {
                     products.map(product => {
-                      if(product._id === detailProduct._id) return null;
+                      //if(product._id === detailProduct._id) return null;
                       return product.category === detailProduct.category
                             ? <ProductItem key={product._id} product={product}/> : null
                     })
