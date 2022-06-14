@@ -1,0 +1,27 @@
+.footer{
+    margin-top: 100px;
+    padding-bottom: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    background-image: url(https://www.pizzaexpress.vn/wp-admin/admin-ajax.php?action=kc_get_thumbn&type=filter_url&id=%2Fwp-content%2Fuploads%2F2018%2F05%2Ffooter_top_bg.png);
+}
+
+.footer .kc{
+    width: 25%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.footer .kc-image{
+    text-align: center;
+}
+.footer .kc-title h3{
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(197, 1, 1);
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+}
