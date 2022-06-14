@@ -4,7 +4,11 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-items: center;
     margin: 20px 0;
+    background-color: rgb(253, 251, 247);
 }
 
+.products .product_card{
+    background-color: whitesmoke;
+}
 /* -------------- Product Item ------------- */
 @import url("../utils/productItem/productItem.css")

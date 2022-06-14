@@ -153,15 +153,24 @@ function DetailProduct() {
                       <h6>#id: M0{detailProduct._id}</h6>
                   </div>
                   <span>{detailProduct.price}.000đ</span>
+                  <div className='select-size'>
+                    <p>Size</p>
+                    <select>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                  </div>
                   <p>{detailProduct.description}</p>
                   {/* <p>{detailProduct.content}</p> */}
-                  <p>Sold: {detailProduct.sold}</p>
                   <Link to="/cart" className="cart">Buy Now</Link>
               </div>
           </div>
-
-          <div>
-              <h2>Related products</h2>
+          <div className='related'>
+              <div style={{display:"flex"}}>
+                <h2>Related Products</h2>
+                <div className='divide'></div>
+              </div>
               <div className="products">
                   {
                     products.map(product => {

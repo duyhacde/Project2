@@ -3,8 +3,8 @@ import axios from 'axios'
 
 //4:18:00
 function UserAPI(token) {
-    const [isLogged, setIsLogged] = useState(true)
-    const [isAdmin, setIsAdmin] = useState(true)
+    const [isLogged, setIsLogged] = useState(false)
+    const [isAdmin, setIsAdmin] = useState(false)
 
     useEffect(() => {
         if(token){

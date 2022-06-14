@@ -137,8 +137,10 @@ function Products() {
       <div className="products">
           {
             products.map(product => {
-              return <ProductItem key={product._id} product={product}
-                      isAdmin={isAdmin}/>
+              return <ProductItem 
+              key={product._id} 
+              product={product}
+              isAdmin={isAdmin}/>
             })
           }
       </div>
