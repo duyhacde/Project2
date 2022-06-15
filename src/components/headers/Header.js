@@ -31,7 +31,7 @@ function Header() {
     const loggedRouter = () => {
         return (
             <>
-                <li><Link to="/history">History</Link></li>
+                <li><Link to="/order">Order</Link></li>
                 <li><Link to="/" onClick={logoutUser}>Logout</Link></li>
             </>
         )
@@ -68,7 +68,7 @@ function Header() {
             {
                 isAdmin ? '' 
                 :<div className="cart-icon">
-                    <span>0</span>
+                    <span>1</span>
                     <Link to="/cart">
                         <img src={Cart} alt="" width="30"/>
                     </Link>
