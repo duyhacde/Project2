@@ -5,7 +5,7 @@ function ProductItem({product, isAdmin}) {
   return (
     <div className="product_card">
         {
-          isAdmin && <input type="checkbox" checked={product.checked}/>
+          isAdmin && <input type="checkbox" />
         }
 
         <img src={product.images.url} alt=""/>
