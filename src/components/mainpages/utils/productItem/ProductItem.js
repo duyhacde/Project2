@@ -1,7 +1,7 @@
 import React from 'react'
 import BtnRender from './BtnRender'
 
-function ProductItem({product, isAdmin}) {
+function ProductItem({product,deleteProduct, isAdmin}) {
   return (
     <div className="product_card">
         {
@@ -16,7 +16,7 @@ function ProductItem({product, isAdmin}) {
             <p>{product.description}</p>
         </div>
         
-        <BtnRender product={product}/>
+        <BtnRender product={product} deleteProduct={deleteProduct}/>
     </div>
   )
 }

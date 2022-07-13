@@ -25,17 +25,17 @@ function Products() {
     const deleteProduct = async(id, public_id) => {
         try {
             setLoading(true)
-            const destroyImg = axios.post('/api/destroy', {public_id},{
-                headers: {Authorization: token}
-            })
+            // const destroyImg = axios.post('/api/destroy', {public_id},{
+            //     headers: {Authorization: token}
+            // })
             const deleteProduct = axios.delete(`/api/products/${id}`, {
                 headers: {Authorization: token}
             })
 
-            await destroyImg
+          //  await destroyImg
             await deleteProduct
-            setCallback(!callback)
-            setLoading(false)
+            alert("Xóa thành công!")
+            window.location.reload()
         } catch (err) {
             alert(err.response.data.msg)
         }
