@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
 .cart{
     position: relative;
     border: 1px solid #ccc;
@@ -26,17 +28,96 @@
     text-align: center;
     margin:0 auto;
 }
+.total .row{
+    float: left;
+    display: flex;
+}
+
 .total h3{
+    font-size: 18px;
     color: crimson;
+    padding-top: 10px;
 }
-.total button{
-    display: block;
-    background-color: red;
-    color:orange;
-    width: 200px;
-    height:70px;
-    line-height:80px;
-    font-weight: 700;
-    margin-bottom:50px;
-    margin:0 auto;
+/*---Css button Book Order--*/
+.total button {
+  background-color: #e82a2a;
+  border-radius: 20px;
+  float: right;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-size: 20px;
+  line-height: 1em;
+  outline: none;
+  padding: 10px 30px 30px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
 }
+
+.total button:before,
+.total button:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.total button:before {
+    border-color: #c47135;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+  }
+  
+  .total button:after {
+    border-bottom-width: 2px;
+    border-color: crimson;
+    bottom: -5px;
+    right: 0px;
+  }
+  
+  .total button:hover,
+  .total button.hover {
+    background-color: crimson;
+  }
+  
+  .total button:hover:before,
+  .total button.hover:before,
+  .total button:hover:after,
+  .total button.hover:after {
+    height: 100%;
+    width: 100%;
+  }
+
+  /*----css Textfield Nhap dia chi----*/
+  .total .group { 
+    position:relative; 
+  }
+
+  .total input {
+    background-color: #ffffff;
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    width:500px;
+    border:none;
+    border-bottom:1px solid #32a408;
+  }
+  .total label {
+    color:rgb(0, 0, 0); 
+    font-size:18px;
+    font-weight:normal;
+    pointer-events:none;
+    margin-left: 20px;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }

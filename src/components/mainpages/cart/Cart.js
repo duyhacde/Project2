@@ -115,13 +115,14 @@ function Cart() {
             }
 
             <div className="total">
-                <h3>Total:{total}.000đ</h3>
-                <PaypalButton
-                total={total}
-                tranSuccess={tranSuccess} />
-                <div class="form-group">
-                  <label for="">Nhập địa chỉ    </label>
-                  <input type="text" onChange={(e)=>{setAddress(e.target.value);console.log(address)}} class="form-control" name="" id="" aria-describedby="helpId" placeholder=""/>
+                <div className="row">
+                    <h3>Total:{total}.000đ</h3>
+                    <div class="group">
+                        <label for="">Nhập địa chỉ    </label>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <input type="text" onChange={(e)=>{setAddress(e.target.value);console.log(address)}} class="form-control" name="" id="" aria-describedby="helpId" placeholder=""/>
+                    </div>
                 </div>
                 <button classname="order" onClick={tranSuccess}>ĐẶT ĐƠN HÀNG
                 </button>
